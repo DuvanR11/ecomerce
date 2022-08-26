@@ -1,0 +1,17 @@
+.producto{
+  height: 21rem;
+  max-width: 18rem;
+  .contenedor-imagen img{
+    height: 11rem;
+    @supports(object-fit: cover){
+      .contenedor-imagen img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+  .acciones{
+    padding-left: 80px;
+  }
+}

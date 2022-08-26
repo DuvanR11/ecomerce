@@ -1,0 +1,60 @@
+.principal{
+  .principal-texto{
+    height: 450px;
+      /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    // background-image: url(/assets/principal/principal-texto2.svg);
+    // background-size:cover;
+
+    .titulo-principal{
+      height: 7rem;
+      font-size:xx-large;
+    }
+    .titulo-body-principal{
+      font-size: larger;
+      height: 5rem;
+    }
+
+  }
+  .principal-imagen img{
+    width: 450px;
+    height: 450px;
+  }
+  .foto{
+    transition: all 300ms;
+    animation: move_vector 6s ease-in-out infinite;
+
+    @supports(object-fit: cover){
+      .principal-imagen img{
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+      }
+    }
+
+    @keyframes move_vector{
+      0%{
+          transform: translateY(13px);
+      }
+      25%{
+          transform: translateY(-13px);
+      }
+      100%{
+          transform: translateY(13px);
+      }
+    }
+
+  }
+
+  @media (max-width: 990px) {
+    .principal-imagen{
+      margin-top: 20px;
+    }
+  }
+}
+
