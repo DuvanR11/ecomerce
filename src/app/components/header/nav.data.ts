@@ -1,33 +1,33 @@
 export const navbarData = [
   {
-      routeLink: 'dashboard',
+      routeLink: '',
       icon: 'fal fa-home',
-      label: 'Dashboard'
+      label: 'Principal'
   },
   {
       routeLink: 'productos',
       icon: 'fal fa-box-open',
-      label: 'Products'
+      label: 'Productos'
   },
   {
       routeLink: 'statistics',
       icon: 'fal fa-chart-bar',
-      label: 'Statistics'
+      label: 'Ofertas'
   },
   {
       routeLink: 'coupens',
       icon: 'fal fa-tags',
-      label: 'Coupens'
+      label: 'Copones'
   },
   {
       routeLink: 'pages',
       icon: 'fal fa-file',
-      label: 'Pages'
+      label: 'Foro'
   },
   {
       routeLink: 'media',
       icon: 'fal fa-camera',
-      label: 'Media'
+      label: 'Conectate'
   },
   {
       routeLink: 'settings',

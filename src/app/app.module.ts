@@ -20,6 +20,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import {MatCardModule} from '@angular/material/card';
 import { BodyComponent } from './pages/body/body.component';
 import {MatButtonModule} from '@angular/material/button';
+import { NavComponent } from './components/nav/nav.component';
+import {MatBadgeModule} from '@angular/material/badge';
+import { SecProductosComponent } from './components/sec-productos/sec-productos.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import {MatButtonModule} from '@angular/material/button';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    BodyComponent
+    BodyComponent,
+    NavComponent,
+    SecProductosComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatBadgeModule
 
   ],
   providers: [],

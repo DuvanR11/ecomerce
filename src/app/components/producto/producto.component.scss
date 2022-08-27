@@ -1,11 +1,13 @@
 .producto{
   height: 21rem;
   max-width: 18rem;
+  margin: 0%;
   .contenedor-imagen img{
     height: 11rem;
     @supports(object-fit: cover){
       .contenedor-imagen img{
         height: 100%;
+        width: 100%;
         object-fit: cover;
         object-position: center center;
       }
@@ -15,3 +17,4 @@
     padding-left: 80px;
   }
 }
+
