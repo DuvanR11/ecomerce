@@ -20,7 +20,7 @@ export const navbarData = [
       label: 'Copones'
   },
   {
-      routeLink: 'pages',
+      routeLink: 'foro',
       icon: 'fal fa-file',
       label: 'Foro'
   },

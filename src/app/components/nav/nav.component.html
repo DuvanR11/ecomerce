@@ -1,11 +1,20 @@
 <mat-toolbar class="example-icon">
-    <button mat-icon-button  aria-label="Example icon-button with share icon">
-        <mat-icon matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon>
-    </button>
+
+  <ng-container *ngIf="{total: total$ | async, quantity: quantity$ | async} as dataCart">
+    <ng-container *ngIf="dataCart.total">
+        <button [routerLink]="['compra']" mat-icon-button  aria-label="Example icon-button with share icon">
+          <mat-icon matBadge="{{dataCart.quantity}}" matBadgeColor="warn">shopping_cart</mat-icon>
+      </button>
+      <!-- {{dataCart.total | currency}} -->
+    </ng-container>
+  </ng-container>
+
     <button mat-icon-button  aria-label="Example icon-button with share icon">
         <mat-icon matBadge="15" matBadgeColor="warn">mail</mat-icon>
     </button>
     <button mat-icon-button  aria-label="Example icon-button with share icon">
         <mat-icon>person</mat-icon>
     </button>
-  </mat-toolbar>
+</mat-toolbar>
+
+

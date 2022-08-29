@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+}
+.detalle-precio{
+  font-size: medium;
+}
+.icon-detalle{
+  color:rgb(49, 163, 34);
+}
+.texto-envio{
+  font-size: larger;
+}
+.acciones{
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  flex: 1 1 auto;
+  margin-top: 0.5rem;
+}
+.form{
+  width: 100%;
+  .form__element{
+    padding: 5px 0px 25px 2px;
+    width: 100%;
+  }
+}
+
+
+.container___button{
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+
+ .btn-checkout{
+  width: 100%;
+ }
+}

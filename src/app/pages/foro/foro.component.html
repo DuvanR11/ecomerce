@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="titulo-foro text-center m-4">Foro de usuarios</h2>
+  <form action="" method="post">
+    <div class="enviar-mensaje row justify-content-center">
+      <mat-form-field class="col-lg-6" appearance="outline">
+        <mat-label>Cuentanos tu experiencia</mat-label>
+        <input matInput placeholder="Cuentanos tu experiencia">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <div class="col-lg-3">
+        <button class="boton-enviar" mat-flat-button color="primary">Enviar Mensaje</button>
+      </div>
+    </div>
+  </form>
+  <div class="container-comentario">
+    <app-comentario></app-comentario>
+  </div>
+</div>

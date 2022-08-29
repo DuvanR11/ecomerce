@@ -1,0 +1,32 @@
+.recibo{
+
+  .imagen{
+    animation: move_vector 6s ease-in-out infinite;
+    @keyframes move_vector{
+      0%{
+          transform: translateY(15px);
+      }
+      25%{
+          transform: translateY(-15px);
+      }
+      100%{
+          transform: translateY(15px);
+      }
+    }
+  }
+  .texto{
+    z-index: 2;
+    .titulo-recibo{
+      font-size: x-large;
+      font-weight: 500;
+      color: #347506;
+    }
+    .subtitulo-recibo{
+      font-size: larger;
+    }
+  }
+
+}
+
+
+

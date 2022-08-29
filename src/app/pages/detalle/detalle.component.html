@@ -1,1 +1,37 @@
-<p>detalle works!</p>
+<section>
+  <div class="row justify-content-center carta-detalle">
+    <div class="col-lg-6">
+      <img src="https://maderaslamision.com/wp-content/uploads/2018/10/maderas-lamision-especie-pinoamarillo-lodgepole2.png" alt="" srcset="">
+    </div>
+    <div class="col-lg-4">
+      <mat-card>
+        <h2 class="text-center">Detalles del producto</h2>
+        <mat-card-header>
+          <mat-card-title>Madera</mat-card-title>
+          <mat-card-subtitle>oferta</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="detalle-precio">
+            {{2022 | currency}}
+          </p>
+          <div class="row envio">
+            <p class="col-1 icon-detalle"><mat-icon>local_shipping</mat-icon></p>
+            <p class="col-8 texto-envio"> Envio gratis para Neiva</p>
+          </div>
+          <p>
+            “Quien planta árboles está al lado de la eternidad. Nuestra codicia de más bosques es la búsqueda de una humanidad más humana”, J. Araújo.
+          </p>
+          <p>Stock: <span>Disponible</span></p>
+          <mat-form-field appearance="fill">
+            <mat-label>Cantidad</mat-label>
+            <input type="number" placeholder="0" matInput>
+          </mat-form-field>
+          <mat-card-subtitle>(Disponible: <span>5</span>)</mat-card-subtitle>
+        </mat-card-content>
+        <mat-card-actions class=" row acciones">
+          <button class="col-10" mat-flat-button color="primary">Agregar al carrito</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</section>

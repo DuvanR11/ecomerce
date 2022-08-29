@@ -1,5 +1,10 @@
 
-<section class="products">
+<section >
     <h1 class="texto-sec-productos text-center">Productos disponibles</h1>
-    <app-producto></app-producto>
+   <div class="products">
+      <app-producto
+      (addToCartClick)="addToCart($event)"
+      [product]="product" *ngFor="let product of products">
+    </app-producto>
+   </div>
 </section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from 'src/app/services/shopping.cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  quantity$ = this.shoppingCartSvc.quatityAction$;
+  total$ = this.shoppingCartSvc.totalAction$;
+  cart$ = this.shoppingCartSvc.cartAction$;
+
+  constructor(private shoppingCartSvc :ShoppingCartService) { }
 
   ngOnInit(): void {
   }

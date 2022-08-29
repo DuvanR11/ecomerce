@@ -1,11 +1,16 @@
 section{
     background: #f2f5f8;
+  //   display:flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+  // margin-top: 20px;
     .texto-sec-productos{
         font-size: 2.8rem;
         padding-top: 1rem;
         margin-bottom: 1rem;
     }
-    app-producto{
+    .products{
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -13,4 +18,5 @@ section{
         margin-top: 2rem;
         gap: 20px;
       }
-} 
+}
+

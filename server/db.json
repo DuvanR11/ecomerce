@@ -1,0 +1,121 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "name": "Madera negra",
+      "valor": "20000",
+      "descripcion": "Madera negra super buena negra"
+    },
+    {
+      "id": 2,
+      "name": "Madera cafe",
+      "valor": "25000",
+      "descripcion": "Madera negra super buena cafe"
+    },
+    {
+      "id": 3,
+      "name": "Madera roja",
+      "valor": "10000",
+      "descripcion": "Madera negra super buena roja"
+    },
+    {
+      "id": 4,
+      "name": "Madera verde",
+      "valor": "30000",
+      "descripcion": "Madera negra super buena verde"
+    },
+    {
+      "id": 5,
+      "name": "Madera azul",
+      "valor": "40000",
+      "descripcion": "Madera negra super buena azul"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Economica"
+    },
+    {
+      "id": 2,
+      "name": "Mediana"
+    },
+    {
+      "id": 3,
+      "name": "Costosa"
+    }
+  ],
+ 
+  "orders": [
+    {
+      "id": 1,
+      "name": "Dominicode",
+      "date": "01/12/1995",
+      "shippingAddress": "Av. de la Granvia de Hospitalet, 115",
+      "city": "Barcelona",
+      "pickup": true
+    },
+    {
+      "name": "Duvan",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "5/8/2022",
+      "pickup": false,
+      "id": 2
+    },
+    {
+      "name": "Dominicode",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "5/8/2022",
+      "isDelivery": false,
+      "id": 3
+    },
+    {
+      "name": "Dominicode",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "5/8/2022",
+      "isDelivery": false,
+      "id": 4
+    }
+  ],
+  "detailsOrders": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "quantity": 10,
+      "productName": "Product name"
+    },
+    {
+      "details": [],
+      "orderId": 2,
+      "id": 2
+    },
+    {
+      "details": [],
+      "orderId": 3,
+      "id": 3
+    },
+    {
+      "details": [],
+      "orderId": 4,
+      "id": 4
+    }
+  ]
+}
